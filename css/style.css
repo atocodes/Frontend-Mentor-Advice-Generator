@@ -1,0 +1,95 @@
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --Font-size-quote: 28px;
+  --Font-weight: 800;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2vh;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--Light-Cyan);
+}
+.attribution a {
+  transition: 1s;
+  text-decoration: unset;
+  color: var(--Neon-Green);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+body #advice_container {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-Grayish-Blue);
+  position: relative;
+  font-family: "Manrope", sans-serif;
+}
+body #advice_container #contents {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body #advice_container #contents #advice {
+  color: var(--Neon-Green);
+}
+body #advice_container #contents #quote {
+  color: var(--Light-Cyan);
+  height: 70%;
+  font-size: var(--Font-size-quote);
+  width: 90%;
+  font-weight: var(--Font-weight);
+}
+body #advice_container #img {
+  width: 90%;
+}
+body #advice_container #img img {
+  width: 100%;
+}
+body #advice_container #dice_img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Neon-Green);
+  border-radius: 50px;
+  transition: 1s;
+}
+
+@media screen and (min-width: 375px) {
+  body #advice_container {
+    width: 500px;
+    height: 300px;
+  }
+  body #advice_container #dice_img:hover {
+    box-shadow: 1px 1px 20px var(--Neon-Green);
+  }
+}/*# sourceMappingURL=style.css.map */
